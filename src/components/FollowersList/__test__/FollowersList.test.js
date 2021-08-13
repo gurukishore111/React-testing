@@ -13,6 +13,21 @@ const MockFollowersList = () => {
 //unit testing
 //find By - async
 describe('FollowersList', () => {
+  beforeEach(() => {
+    console.log('before each test');
+  });
+
+  beforeAll(() => {
+    console.log('before running ones');
+  });
+
+  afterEach(() => {
+    console.log('after each test');
+  });
+
+  afterAll(() => {
+    console.log('after running ones');
+  });
   it('should render follower item', async () => {
     render(<MockFollowersList />);
     const followerDivElements = await screen.findByTestId('follower-item-0');

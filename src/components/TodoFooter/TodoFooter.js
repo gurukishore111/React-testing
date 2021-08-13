@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function TodoFooter({ numberOfIncompleteTasks }) {
   return (
     <div className="todo-footer">
-      <p data-testId="para">
+      <p data-testid="para">
         {numberOfIncompleteTasks}{' '}
         {numberOfIncompleteTasks === 1 ? 'task' : 'tasks'} left
       </p>

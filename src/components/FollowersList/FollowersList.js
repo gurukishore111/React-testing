@@ -22,7 +22,7 @@ export default function FollowersList() {
           <div
             className="follower-item"
             key={index}
-            data-testId={`follower-item-${index}`}
+            data-testid={`follower-item-${index}`}
           >
             <img src={follower.picture.large} />
             <div className="followers-details">
