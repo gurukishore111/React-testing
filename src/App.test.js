@@ -1,12 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
 // test (or) it
 // it('', () => {});
 
@@ -16,3 +10,9 @@ test('renders learn react link', () => {
 // 2.Find the elements we want to interact with
 // 3.Interact with those elements
 // 4.Assert that the results are as expected
+
+// test('renders learn react link', async () => {
+//   render(<App />);
+//   const linkElement = screen.getByText(/learn react/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
